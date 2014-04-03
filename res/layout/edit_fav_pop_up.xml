@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/editLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        >
+    <TextView
+            android:id="@+id/edit_fav_pop_up_lbl_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_fav_pop_up_lbl_name"
+            >
+    </TextView>
+    <AutoCompleteTextView
+            android:id="@+id/edit_fav_pop_up_txt_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/autocomplete_string"
+            android:textSize="18sp"
+            >
+    </AutoCompleteTextView>
+    <TextView
+            android:id="@+id/edit_fav_pop_up_lbl_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/edit_fav_pop_up_lbl_url"
+            >
+    </TextView>
+    <EditText
+            android:id="@+id/edit_fav_pop_up_txt_url"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_text_string"
+            android:textSize="18sp"
+            android:inputType="textUri"
+            >
+    </EditText>
+    <LinearLayout
+            android:id="@+id/edit_fav_pop_up_button_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            style="?android:attr/buttonBarStyle"
+           
+            >
+        <Button
+                android:id="@+id/edit_fav_pop_up_btn_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_fav_pop_up_btn_cancel"
+                android:layout_weight="0.5"
+                android:background="?android:attr/selectableItemBackground"
+                />
+
+        <Button
+                android:id="@+id/edit_fav_pop_up_btn_save"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_fav_pop_up_btn_save"
+                android:layout_weight="0.5"
+                android:background="?android:attr/selectableItemBackground"
+                />
+    </LinearLayout>
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="?android:attr/dividerVertical"/>
+</LinearLayout>
